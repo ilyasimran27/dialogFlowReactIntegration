@@ -8,8 +8,8 @@ import textQueryRequestResponse from './utiles/DialogflowHelper.mjs'
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
-
+// const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
+const twilioClient="";
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
