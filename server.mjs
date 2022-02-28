@@ -53,7 +53,7 @@ app.post("/talktochatbot", async (req, res) => {
     
     const {responses} = await textQueryRequestResponse(
         process.env.DIALOGFLOW_PROJECT_ID,
-        req.query.text,
+        req.body.text,
         'en-US'
     )
    
